@@ -9,8 +9,8 @@ class PagesController < ActionController::Base
 
 	def create_todo
 		t = Todo.new
-		t.jobs = params[:todo][:jobs]
-		t.done = params[:todo][:done]
+		t.tasks = params[:todo][:tasks]
+		t.finished = params[:todo][:finished]
 		t.save!
 
 		redirect_to home_path

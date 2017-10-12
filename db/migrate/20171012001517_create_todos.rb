@@ -1,9 +1,8 @@
 class CreateTodos < ActiveRecord::Migration[5.1]
   def change
     create_table :todos do |t|
-    	t.string :jobs
-    	t.boolean :done
-    	t.timestamps
+    	t.string :tasks
+    	t.boolean :finished
     end
   end
 end
